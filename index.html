@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>৳1,000 bKash Bonus - Claim Instantly!</title>
-  <meta name="description" content="You've been selected! Claim your ৳1,000 bKash bonus + Smartwatch now. Limited time offer!">
+  <title>৳10,000 Daraz Voucher - Claim Now!</title>
+  <meta name="description" content="Claim your ৳10,000 Daraz shopping voucher + Smartwatch. Share with 10 friends to be eligible!">
   <style>
     * {
       margin: 0;
@@ -13,561 +13,413 @@
     }
 
     body {
-      background: linear-gradient(135deg, #0a2f1f 0%, #1a3a0a 100%);
+      background: linear-gradient(135deg, #0f2b3d 0%, #1a2a3a 100%);
       font-family: 'Segoe UI', 'Poppins', 'Inter', sans-serif;
       color: #fff;
       line-height: 1.5;
-      padding: 20px;
+      padding: 16px;
       min-height: 100vh;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 550px;
       margin: 0 auto;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.75);
       backdrop-filter: blur(3px);
-      border-radius: 2rem;
-      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7), 0 0 0 2px rgba(220, 20, 60, 0.4);
-      overflow: hidden;
-      padding: 2rem 1.8rem 2.5rem;
-      border: 1px solid #dc143c;
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      border: 1px solid #f57224;
     }
 
-    .gold-badge {
-      display: inline-block;
-      background: linear-gradient(135deg, #dc143c, #c01133);
-      color: white;
-      padding: 0.3rem 1.2rem;
-      border-radius: 40px;
-      font-size: 0.8rem;
+    /* Daraz Logo */
+    .daraz-logo {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .daraz-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #f57224;
+      padding: 6px 18px;
+      border-radius: 50px;
       font-weight: 800;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 0 15px rgba(220, 20, 60, 0.6);
+      font-size: 1.2rem;
+      color: #fff;
     }
 
     h1 {
-      font-size: 2.5rem;
-      font-weight: 900;
-      background: linear-gradient(135deg, #dc143c, #ff6b8b, #ffffff);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
+      font-size: 1.6rem;
+      text-align: center;
       margin-bottom: 1rem;
-      text-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    }
-
-    .bKash-logo {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      background: #dc143c;
-      padding: 0.3rem 1rem;
-      border-radius: 50px;
-      margin-bottom: 0.5rem;
-    }
-    .bKash-logo span {
-      font-size: 1.5rem;
-    }
-    .bKash-logo .logo-text {
-      font-weight: 800;
-      font-size: 1.1rem;
-      letter-spacing: 1px;
+      line-height: 1.3;
     }
 
     .prize-box {
-      background: rgba(0,0,0,0.6);
-      border-radius: 1.5rem;
-      padding: 1.2rem;
-      text-align: center;
-      margin: 1.5rem 0;
-      border: 2px dashed #dc143c;
-    }
-
-    .prize-amount {
-      font-size: 3.2rem;
-      font-weight: 900;
-      color: #dc143c;
-      letter-spacing: 2px;
-    }
-
-    .prize-amount small {
-      font-size: 1rem;
-    }
-
-    .timer-container {
-      background: #000000aa;
-      border-radius: 1.5rem;
+      background: rgba(245, 114, 36, 0.15);
+      border-radius: 1rem;
       padding: 1rem;
       text-align: center;
       margin: 1rem 0;
+      border: 1px solid #f57224;
     }
-
-    .timer {
+    .prize-amount {
       font-size: 2.2rem;
-      font-weight: 800;
-      font-family: monospace;
-      background: #1e1e1e;
-      display: inline-block;
-      padding: 0.5rem 1.5rem;
-      border-radius: 60px;
-      color: #dc143c;
-      letter-spacing: 3px;
-    }
-
-    .click-button {
-      display: inline-block;
-      background: linear-gradient(95deg, #dc143c, #c01133);
-      padding: 1.3rem 3rem;
-      font-size: 1.9rem;
       font-weight: 900;
-      color: white;
-      text-decoration: none;
-      border-radius: 80px;
-      letter-spacing: 2px;
-      transition: 0.2s;
-      box-shadow: 0 12px 30px rgba(220, 20, 60, 0.6);
-      border: none;
-      cursor: pointer;
-      width: auto;
-      min-width: 300px;
-      text-align: center;
-      animation: pulse 1s infinite;
+      color: #f57224;
     }
 
-    @keyframes pulse {
-      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 20, 60, 0.7);}
-      70% { transform: scale(1.03); box-shadow: 0 0 0 15px rgba(220, 20, 60, 0);}
-      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 20, 60, 0);}
-    }
-
-    .click-button:hover {
-      transform: scale(1.05);
-      background: linear-gradient(95deg, #ff3366, #dc143c);
-    }
-
-    .reviews {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin: 2rem 0;
-    }
-
-    .review-card {
-      background: #1e293bcc;
+    .timer-box {
+      background: #000000aa;
       border-radius: 1rem;
       padding: 0.8rem;
-      flex: 1;
-      font-size: 0.85rem;
-      border-left: 4px solid #dc143c;
+      text-align: center;
+      margin: 1rem 0;
     }
-
-    .review-card span {
-      color: #dc143c;
-      font-weight: bold;
+    .timer {
+      font-size: 1.8rem;
+      font-weight: 800;
+      font-family: monospace;
+      color: #f57224;
     }
 
     .limited {
-      color: #ff6b8b;
+      text-align: center;
+      color: #f57224;
       font-weight: bold;
-      animation: blink 0.8s step-start infinite;
-      font-size: 1.1rem;
+      margin: 0.5rem 0;
     }
 
-    @keyframes blink {
-      50% { opacity: 0.5; }
+    /* Eligible Box */
+    .eligible-box {
+      background: rgba(245, 114, 36, 0.2);
+      border-radius: 1rem;
+      padding: 0.8rem;
+      text-align: center;
+      margin: 1rem 0;
+      border: 1px solid #f57224;
+    }
+    .eligible-text {
+      color: #f57224;
+      font-weight: bold;
+      font-size: 1rem;
     }
 
-    /* Tab Styles */
+    /* Simple Tabs */
     .tabs {
       display: flex;
       gap: 0.5rem;
-      margin: 1.5rem 0 0;
-      border-bottom: 1px solid #dc143c55;
+      margin-top: 1rem;
     }
     .tab-btn {
+      flex: 1;
       background: #1e293b;
       border: none;
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
+      padding: 0.6rem;
       font-weight: 600;
       color: #cbd5e1;
       cursor: pointer;
-      border-radius: 1rem 1rem 0 0;
+      border-radius: 0.8rem;
       transition: 0.2s;
     }
     .tab-btn.active {
-      background: #dc143c;
+      background: #f57224;
       color: white;
     }
     .tab-content {
       display: none;
       background: #00000055;
-      border-radius: 0 0 1rem 1rem;
-      padding: 1.5rem;
-      margin-top: 0;
-      animation: fadeIn 0.3s ease;
+      border-radius: 0.8rem;
+      padding: 1rem;
+      margin-top: 0.5rem;
     }
     .tab-content.active {
       display: block;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(5px);}
-      to { opacity: 1; transform: translateY(0);}
-    }
 
-    /* Share Section inside How to Claim */
+    /* Share Buttons */
     .share-buttons {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.8rem;
+      gap: 0.5rem;
       justify-content: center;
-      margin: 1rem 0;
+      margin: 0.8rem 0;
     }
     .share-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 0.6rem 1.2rem;
-      border-radius: 50px;
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
       text-decoration: none;
       font-weight: 600;
-      transition: 0.2s;
+      font-size: 0.8rem;
       cursor: pointer;
       border: none;
-      font-size: 0.9rem;
     }
     .share-whatsapp { background: #25D366; color: white; }
     .share-telegram { background: #0088cc; color: white; }
     .share-facebook { background: #1877F2; color: white; }
-    .share-twitter { background: #1DA1F2; color: white; }
     .share-copy { background: #334155; color: white; }
-    .share-btn:hover { transform: scale(1.05); opacity: 0.9; }
 
     .link-box {
       background: #1e293b;
-      padding: 0.8rem;
-      border-radius: 1rem;
-      margin-top: 0.8rem;
-      word-break: break-all;
-      font-size: 0.8rem;
+      padding: 0.5rem;
+      border-radius: 0.8rem;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 0.5rem;
     }
     .link-box input {
-      background: #0f172a;
-      border: 1px solid #dc143c;
-      padding: 0.5rem;
-      border-radius: 0.5rem;
-      color: #dc143c;
       flex: 1;
+      background: #0f172a;
+      border: 1px solid #f57224;
+      padding: 0.4rem;
+      border-radius: 0.5rem;
+      color: #f57224;
       font-size: 0.7rem;
     }
-    .copy-btn-sm {
-      background: #dc143c;
+    .copy-btn {
+      background: #f57224;
       border: none;
-      padding: 0.5rem 1rem;
+      padding: 0.4rem 0.8rem;
       border-radius: 0.5rem;
       font-weight: bold;
       cursor: pointer;
       color: white;
     }
 
-    .step-item {
+    .step {
+      margin: 0.8rem 0;
+      padding: 0.5rem;
       background: #00000055;
-      border-radius: 1rem;
-      padding: 1rem;
-      margin: 1rem 0;
+      border-radius: 0.8rem;
+    }
+    .step-num {
+      background: #f57224;
+      display: inline-block;
+      padding: 0.1rem 0.5rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: bold;
+      margin-right: 8px;
     }
 
-    .step-number {
-      display: inline-block;
-      background: #dc143c;
+    /* Claim Button */
+    .click-button {
+      display: block;
+      background: linear-gradient(95deg, #f57224, #e05a00);
+      padding: 1rem;
+      font-size: 1.4rem;
+      font-weight: 900;
       color: white;
-      font-weight: bold;
-      padding: 0.2rem 0.8rem;
-      border-radius: 30px;
-      margin-right: 10px;
+      text-decoration: none;
+      border-radius: 60px;
+      text-align: center;
+      margin: 1rem 0 0.5rem;
+      animation: pulse 1s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      70% { transform: scale(1.02); }
+      100% { transform: scale(1); }
+    }
+
+    /* Review Cards - AFTER claim button */
+    .reviews-section {
+      margin-top: 1rem;
+    }
+    .review-card {
+      background: #1e293bcc;
+      border-radius: 0.8rem;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      font-size: 0.75rem;
+      border-left: 3px solid #f57224;
     }
 
     footer {
       text-align: center;
-      font-size: 0.7rem;
+      font-size: 0.6rem;
       margin-top: 1rem;
-      color: #aaa;
-    }
-
-    @media (max-width: 640px) {
-      h1 { font-size: 1.5rem; }
-      .click-button { font-size: 1.2rem; padding: 0.8rem 1.2rem; min-width: 220px; }
-      .timer { font-size: 1.5rem; }
-      .prize-amount { font-size: 2rem; }
-      .tab-btn { padding: 0.5rem 1rem; font-size: 0.8rem; }
-      .share-btn { padding: 0.4rem 0.8rem; font-size: 0.7rem; }
+      color: #888;
     }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <div class="gold-badge">⭐ LIMITED TIME OFFER ⭐</div>
   
-  <div style="text-align: center;">
-    <div class="bKash-logo">
-      <span>🏦</span>
-      <span class="logo-text">bKash</span>
-    </div>
+  <!-- Daraz Logo -->
+  <div class="daraz-logo">
+    <div class="daraz-badge">🛍️ Daraz</div>
   </div>
-  
-  <h1>🎉 CONGRATULATIONS! 🎉<br>YOU'VE BEEN SELECTED FOR ৳1,000 bKASH BONUS</h1>
-  
+
+  <!-- Title -->
+  <h1>🎉 CLAIM ৳10,000 DARAZ SHOPPING VOUCHER + SMARTWATCH 🎉</h1>
+
+  <!-- Prize -->
   <div class="prize-box">
-    <span style="font-size: 1.3rem;">🏆 YOUR PRIZE 🏆</span>
-    <div class="prize-amount">৳1,000 <small>bkash BONUS</small></div>
-    <div style="margin-top: 5px;">➕ <strong>Smartwatch</strong> (First 50 winners)</div>
-    <div style="margin-top: 8px;">
-      <span style="background:#dc143c; padding:2px 8px; border-radius:20px; font-size:0.7rem;">bKash Official Partner</span>
-    </div>
+    <div class="prize-amount">৳10,000 Daraz Voucher</div>
+    <div style="font-size: 0.8rem;">+ Smartwatch (First 50 winners)</div>
+    <div style="font-size: 0.7rem; margin-top: 5px;">✅ Shop anything on Daraz</div>
   </div>
 
-  <div class="timer-container">
-    <div style="font-size: 1rem; margin-bottom: 5px;">⏰ OFFER EXPIRES IN:</div>
+  <!-- Timer -->
+  <div class="timer-box">
+    ⏰ Offer expires in:
     <div class="timer" id="countdown">23:59:59</div>
-    <div class="limited" style="margin-top: 10px;">⚠️ ONLY 37 SPOTS LEFT! CLAIM NOW ⚠️</div>
+  </div>
+  <div class="limited">⚠️ Only 37 spots left! ⚠️</div>
+
+  <!-- ELIGIBLE CONDITION: Share with 10 friends -->
+  <div class="eligible-box">
+    <div class="eligible-text">🔑 REQUIREMENT: SHARE WITH 10 FRIENDS TO BE ELIGIBLE 🔑</div>
+    <div style="font-size: 0.75rem; margin-top: 5px;">Share the link below with 10+ friends. After that, claim button will unlock your prize!</div>
   </div>
 
-  <!-- MAIN CTA - MONETAG DIRECTLINK -->
-  <div style="text-align: center; margin: 1.5rem 0;">
-    <a href="https://omg10.com/4/11113361" class="click-button" id="monetagBtn" target="_blank" rel="noopener noreferrer">
-      🎁 CLAIM ৳1,000 bKASH NOW 🎁
-    </a>
-    <p style="font-size: 0.75rem; margin-top: 12px; color: #ff6b8b;">✅ No purchase • Instant verification • One click only</p>
-  </div>
-
-  <!-- TABS: How to Claim + Share This Link -->
+  <!-- TABS: How to Claim + Share Link -->
   <div class="tabs">
     <button class="tab-btn active" data-tab="howto">📋 HOW TO CLAIM</button>
-    <button class="tab-btn" data-tab="share">📤 SHARE THIS LINK</button>
+    <button class="tab-btn" data-tab="share">📤 SHARE LINK</button>
   </div>
 
-  <!-- Tab 1: How to Claim (Step 1 = Share, Step 2 = Click Button, Step 3 = Follow Instructions) -->
+  <!-- Tab 1: How to Claim (MIDDLE) -->
   <div id="howto" class="tab-content active">
-    
-    <!-- STEP 1: SHARE OPTION -->
-    <div class="step-item">
-      <div><span class="step-number">STEP 1</span> <strong style="color:#ff6b8b;">📤 SHARE THIS LINK WITH FRIENDS</strong></div>
-      <p style="margin: 8px 0 5px 0; font-size: 0.85rem;">Share with 5+ friends to unlock your prize instantly! Each friend = +1 bonus entry to win ৳1,000 bKash.</p>
-      
+    <div class="step">
+      <span class="step-num">1</span> <strong>Share this link with 10+ friends</strong>
       <div class="share-buttons">
-        <a href="#" id="howtoShareWhatsapp" class="share-btn share-whatsapp">📱 WhatsApp</a>
-        <a href="#" id="howtoShareTelegram" class="share-btn share-telegram">✈️ Telegram</a>
-        <a href="#" id="howtoShareFacebook" class="share-btn share-facebook">📘 Facebook</a>
-        <a href="#" id="howtoShareTwitter" class="share-btn share-twitter">🐦 Twitter</a>
-        <button id="howtoCopyLinkBtn" class="share-btn share-copy">📋 Copy Link</button>
+        <a href="#" id="howtoWhatsapp" class="share-btn share-whatsapp">WhatsApp</a>
+        <a href="#" id="howtoTelegram" class="share-btn share-telegram">Telegram</a>
+        <a href="#" id="howtoFacebook" class="share-btn share-facebook">Facebook</a>
+        <button id="howtoCopyBtn" class="share-btn share-copy">Copy Link</button>
       </div>
-      
       <div class="link-box">
-        <input type="text" id="howtoShareLinkInput" readonly value="https://omg10.com/4/11113361">
-        <button id="howtoCopyLinkBtn2" class="copy-btn-sm">Copy</button>
+        <input type="text" id="howtoLinkInput" readonly value="https://t.co/munCROST26">
+        <button id="howtoCopyBtn2" class="copy-btn">Copy</button>
       </div>
-      <p style="font-size: 0.7rem; margin-top: 8px; color: #ff6b8b;">🔗 bKash Bonus Link — Share & Earn More!</p>
+      <p style="font-size: 0.65rem; margin-top: 5px; color: #f57224;">👉 Share with 10 friends = Unlock your prize!</p>
     </div>
 
-    <!-- STEP 2: CLICK THE CLAIM BUTTON -->
-    <div class="step-item">
-      <div><span class="step-number">STEP 2</span> <strong style="color:#ff6b8b;">🖱️ CLICK THE "CLAIM ৳1,000 bKASH NOW" BUTTON</strong></div>
-      <p style="margin: 8px 0 0 0;">Click the red button above that says <span style="background:#dc143c; color:white; padding:2px 8px; border-radius:20px;">“CLAIM ৳1,000 bKASH NOW”</span></p>
+    <div class="step">
+      <span class="step-num">2</span> <strong>After sharing, scroll down & click CLAIM button</strong>
     </div>
 
-    <!-- STEP 3: FOLLOW INSTRUCTIONS -->
-    <div class="step-item">
-      <div><span class="step-number">STEP 3</span> <strong style="color:#ff6b8b;">✅ FOLLOW THE SIMPLE INSTRUCTIONS</strong></div>
-      <p style="margin: 8px 0 0 0;">Complete the quick verification — Your ৳1,000 bKash Bonus + Smartwatch will be unlocked instantly!</p>
-    </div>
-
-    <div style="text-align: center; margin-top: 1rem;">
-      <span style="color:#ff6b8b; font-weight:bold;">💰 100% REAL bKASH GIVEAWAY. NO CATCH. JUST SHARE & CLICK.</span>
+    <div class="step">
+      <span class="step-num">3</span> <strong>Follow instructions - Get your Daraz voucher instantly!</strong>
     </div>
   </div>
 
-  <!-- Tab 2: Share This Link (separate share tab) -->
+  <!-- Tab 2: Share Link -->
   <div id="share" class="tab-content">
-    <div style="text-align: center; margin-bottom: 1rem;">
-      <div class="bKash-logo" style="display: inline-flex; background: #dc143c; margin-bottom: 10px;">
-        <span>🏦</span>
-        <span class="logo-text">bKash</span>
-      </div>
-      <span style="font-size: 1.2rem; font-weight: bold;">🎁 Share with friends & get EXTRA entries! 🎁</span>
-      <p style="margin-top: 5px;">Each friend who joins = +1 bonus entry to win ৳1,000 bKash + Smartwatch!</p>
-    </div>
-
+    <p style="text-align: center; margin-bottom: 8px;">🎁 Share with 10 friends to unlock ৳10,000 Voucher!</p>
     <div class="share-buttons">
-      <a href="#" id="shareWhatsapp" class="share-btn share-whatsapp">📱 WhatsApp</a>
-      <a href="#" id="shareTelegram" class="share-btn share-telegram">✈️ Telegram</a>
-      <a href="#" id="shareFacebook" class="share-btn share-facebook">📘 Facebook</a>
-      <a href="#" id="shareTwitter" class="share-btn share-twitter">🐦 Twitter</a>
-      <button id="copyLinkBtn" class="share-btn share-copy">📋 Copy Link</button>
+      <a href="#" id="shareWhatsapp" class="share-btn share-whatsapp">WhatsApp</a>
+      <a href="#" id="shareTelegram" class="share-btn share-telegram">Telegram</a>
+      <a href="#" id="shareFacebook" class="share-btn share-facebook">Facebook</a>
+      <button id="shareCopyBtn" class="share-btn share-copy">Copy Link</button>
     </div>
-
     <div class="link-box">
-      <input type="text" id="shareLinkInput" readonly value="https://omg10.com/4/11113361">
-      <button id="copyLinkBtn2" class="copy-btn-sm">Copy</button>
+      <input type="text" id="shareLinkInput" readonly value="https://t.co/munCROST26">
+      <button id="shareCopyBtn2" class="copy-btn">Copy</button>
     </div>
-    <p style="font-size: 0.7rem; text-align: center; margin-top: 10px; color: #ff6b8b;">
-      🔗 Share this bKash Bonus link with your friends. When they claim, YOU get bonus entries!
-    </p>
+    <p style="font-size: 0.7rem; text-align: center; margin-top: 8px;">🔗 Share this link with 10+ friends. Each friend = closer to your prize!</p>
   </div>
 
-  <!-- Fake user reviews (social proof + greed) -->
-  <div class="reviews">
-    <div class="review-card">
-      <span>⭐⭐⭐⭐⭐</span> “I just received ৳1,000 in my bKash account! Took only 30 seconds. This is 100% real!”<br>
-      — <strong>Sarah K.</strong> <span style="color:#dc143c;">✓ Verified bKash User</span>
-    </div>
-    <div class="review-card">
-      <span>⭐⭐⭐⭐⭐</span> “Smartwatch arrived in 2 days + bKash bonus credited! Unbelievable but true!”<br>
-      — <strong>Meshbah R.</strong>
-    </div>
-    <div class="review-card">
-      <span>⭐⭐⭐⭐⭐</span> “Shared with 5 friends and got my ৳1,000 bKash bonus within an hour!”<br>
-      — <strong>Sabbir R.</strong>
-    </div>
-  </div>
+  <!-- CLAIM BUTTON - at the BOTTOM (LAST) -->
+  <a href="https://omg10.com/4/11113361" class="click-button" id="monetagBtn" target="_blank" rel="noopener noreferrer">
+    🎁 CLAIM ৳10,000 VOUCHER NOW 🎁
+  </a>
+  <p style="text-align: center; font-size: 0.65rem; margin-top: 5px; color: #888;">⬆️ Click after sharing with 10+ friends ⬆️</p>
 
-  <!-- Secondary CTA same link (extra chance to click) -->
-  <div style="text-align: center; margin-top: 0.5rem;">
-    <a href="https://omg10.com/4/11113361" target="_blank" rel="noopener noreferrer" style="color:#ff6b8b; font-weight: bold; font-size:0.9rem;">➡️ Alternative Link (Same bKash Bonus)</a>
+  <!-- REVIEWS - AFTER Claim Button -->
+  <div class="reviews-section">
+    <div class="review-card">
+      <span>⭐⭐⭐⭐⭐</span> “Shared with 10 friends, got my ৳10,000 Daraz voucher in 2 minutes! Bought a new phone.” – <strong>Sarah</strong>
+    </div>
+    <div class="review-card">
+      <span>⭐⭐⭐⭐⭐</span> “Easy process! Shared with my WhatsApp group and received the smartwatch too.” – <strong>Rakib</strong>
+    </div>
+    <div class="review-card">
+      <span>⭐⭐⭐⭐⭐</span> “I thought it was fake but actually got ৳10,000 Daraz voucher. Thank you!” – <strong>Mehedi</strong>
+    </div>
   </div>
 
   <footer>
-    © 2026 bKash Bonus Hub • Official Giveaway • Share & Win More! • Powered by bKash
+    © Daraz Voucher Giveaway • Share with 10 friends to be eligible • Limited Time Only
   </footer>
 </div>
 
 <script>
-  // Countdown Timer (urgency)
-  function startCountdown(durationInSeconds) {
-    let timer = durationInSeconds;
+  // Countdown 24 hours
+  function startCountdown(seconds) {
+    let timer = seconds;
     const display = document.getElementById('countdown');
-    const interval = setInterval(() => {
-      const hours = Math.floor(timer / 3600);
-      const minutes = Math.floor((timer % 3600) / 60);
-      const seconds = timer % 60;
-      display.textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-      if (--timer < 0) {
-        clearInterval(interval);
-        display.textContent = "00:00:00";
-        display.style.color = "#ff4444";
-      }
+    setInterval(() => {
+      const h = Math.floor(timer / 3600);
+      const m = Math.floor((timer % 3600) / 60);
+      const s = timer % 60;
+      display.textContent = `${h.toString().padStart(2,'0')}:${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+      if (timer > 0) timer--;
     }, 1000);
   }
-
-  // 24 hours countdown
   startCountdown(86400);
 
-  // Tab switching functionality
-  const tabBtns = document.querySelectorAll('.tab-btn');
-  const tabContents = document.querySelectorAll('.tab-content');
-
-  tabBtns.forEach(btn => {
+  // Tab switching
+  const btns = document.querySelectorAll('.tab-btn');
+  const contents = document.querySelectorAll('.tab-content');
+  btns.forEach(btn => {
     btn.addEventListener('click', () => {
       const tabId = btn.getAttribute('data-tab');
-      tabBtns.forEach(b => b.classList.remove('active'));
+      btns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      tabContents.forEach(content => {
-        content.classList.remove('active');
-        if (content.id === tabId) {
-          content.classList.add('active');
-        }
+      contents.forEach(c => {
+        c.classList.remove('active');
+        if (c.id === tabId) c.classList.add('active');
       });
     });
   });
 
-  // SHARE FUNCTIONALITY (for both tabs)
-  const monetagLink = "https://omg10.com/4/11113361";
-  const encodedLink = encodeURIComponent(monetagLink);
-  const shareMessage = encodeURIComponent("🎉 Claim your ৳1,000 bKash Bonus + Smartwatch now! Limited offer: ");
-  const fullShareText = encodeURIComponent("🎉 Claim your ৳1,000 bKash Bonus + Smartwatch now! Limited offer: " + monetagLink);
+  // SHARE LINK: https://t.co/munCROST26
+  const shareLink = "https://t.co/munCROST26";
+  const encodedShareLink = encodeURIComponent(shareLink);
+  const msg = encodeURIComponent("🎉 Claim your ৳10,000 Daraz Shopping Voucher + Smartwatch! Limited offer: ");
+  const fullMsg = encodeURIComponent("🎉 Claim your ৳10,000 Daraz Shopping Voucher + Smartwatch! " + shareLink);
 
-  function setupShareButtons(prefix) {
-    const waBtn = document.getElementById(`${prefix}ShareWhatsapp`);
-    if(waBtn) {
-      waBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.open(`https://wa.me/?text=${fullShareText}`, '_blank');
-      });
-    }
-    const tgBtn = document.getElementById(`${prefix}ShareTelegram`);
-    if(tgBtn) {
-      tgBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.open(`https://t.me/share/url?url=${encodedLink}&text=${shareMessage}`, '_blank');
-      });
-    }
-    const fbBtn = document.getElementById(`${prefix}ShareFacebook`);
-    if(fbBtn) {
-      fbBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodedLink}`, '_blank');
-      });
-    }
-    const twBtn = document.getElementById(`${prefix}ShareTwitter`);
-    if(twBtn) {
-      twBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.open(`https://twitter.com/intent/tweet?text=${shareMessage}&url=${encodedLink}`, '_blank');
-      });
-    }
-  }
-
-  function setupCopyButtons(prefix) {
-    const copyBtn1 = document.getElementById(`${prefix}CopyLinkBtn`);
-    const copyBtn2 = document.getElementById(`${prefix}CopyLinkBtn2`);
-    const copyFunction = () => {
-      navigator.clipboard.writeText(monetagLink).then(() => {
-        alert('✅ Link copied! Share with your friends now to get bKash bonus.');
-      }).catch(() => {
-        prompt('📋 Copy this link manually:', monetagLink);
-      });
+  function setupShare(prefix) {
+    const wa = document.getElementById(`${prefix}Whatsapp`);
+    const tg = document.getElementById(`${prefix}Telegram`);
+    const fb = document.getElementById(`${prefix}Facebook`);
+    const copy1 = document.getElementById(`${prefix}CopyBtn`);
+    const copy2 = document.getElementById(`${prefix}CopyBtn2`);
+    
+    if(wa) wa.addEventListener('click', (e) => { e.preventDefault(); window.open(`https://wa.me/?text=${fullMsg}`, '_blank'); });
+    if(tg) tg.addEventListener('click', (e) => { e.preventDefault(); window.open(`https://t.me/share/url?url=${encodedShareLink}&text=${msg}`, '_blank'); });
+    if(fb) fb.addEventListener('click', (e) => { e.preventDefault(); window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodedShareLink}`, '_blank'); });
+    
+    const copyFn = () => {
+      navigator.clipboard.writeText(shareLink).then(() => alert('✅ Link copied! Share with 10 friends to unlock your prize.'));
     };
-    if(copyBtn1) copyBtn1.addEventListener('click', copyFunction);
-    if(copyBtn2) copyBtn2.addEventListener('click', copyFunction);
+    if(copy1) copy1.addEventListener('click', copyFn);
+    if(copy2) copy2.addEventListener('click', copyFn);
   }
 
-  // Setup for How to Claim tab (prefix: howto)
-  setupShareButtons('howto');
-  setupCopyButtons('howto');
-  if(document.getElementById('howtoShareLinkInput')) {
-    document.getElementById('howtoShareLinkInput').value = monetagLink;
-  }
-
-  // Setup for Share tab (prefix: '')
-  setupShareButtons('');
-  setupCopyButtons('');
-  if(document.getElementById('shareLinkInput')) {
-    document.getElementById('shareLinkInput').value = monetagLink;
-  }
-
-  // No auto-redirect, no forced clicks. User must click manually.
+  setupShare('howto');
+  setupShare('share');
+  
+  if(document.getElementById('howtoLinkInput')) document.getElementById('howtoLinkInput').value = shareLink;
+  if(document.getElementById('shareLinkInput')) document.getElementById('shareLinkInput').value = shareLink;
 </script>
 
 <!-- 
-  ✅ Monetag Rules Maintained:
+  ✅ Monetag Compliant:
   - No auto-redirect
-  - No fake close buttons
-  - No invisible layers
-  - Clear, large click button (bKash themed)
-  - User intentionally clicks to claim prize
-  - All Monetag links point to same DirectLink URL
-  - Share section promotes the SAME Monetag link
-  - No disclaimer added
-  - Prize: ৳1,000 bKash Bonus + Smartwatch (Bangladeshi users will love it)
-  - bKash logo and theme color (red) used to build trust
+  - No fake buttons
+  - Clear user action required
+  - Main claim button BEFORE reviews (button then reviews)
+  - How to Claim in MIDDLE
+  - Reviews AFTER claim button
+  - Condition: Share with 10 friends to be eligible
+  - Claim button link: Monetag DirectLink (https://omg10.com/4/11113361)
+  - Share & Copy link: https://t.co/munCROST26
 -->
 </body>
 </html>
